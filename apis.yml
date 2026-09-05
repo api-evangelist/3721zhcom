@@ -1,8 +1,19 @@
 aid: 3721zhcom
 name: 3721zh.com
-description: '3721zh.com is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  3721zh.com is the public domain of 转换商城 (Zhuanhuan Mall / "Conversion Mall"), the local-life
+  private-domain e-commerce platform operated by 转换空间（上海）电子商务有限公司 (Zhuanhuan Space
+  (Shanghai) E-Commerce Co., Ltd.), founded in 2018 and headquartered in Shanghai, China. It bundles
+  a free-to-merchant SaaS with a branded-goods supply chain, fulfilment, and private-domain traffic
+  build-out and agency operation, so catering, property-management, beauty, hotel, foot-bath,
+  tea-house, education and retail-chain merchants can turn in-store spend into equivalent-value
+  goods, vouchers, coupons and memberships. Company materials list WeCom, WeCom communities, WeChat
+  mini programs, API interfaces and private deployment as the delivery modes of that service system.
+  As of the 2026-09-05 probe the company publishes no developer portal, API reference or
+  machine-readable contract; integration is arranged through its onboarding forms and a sales
+  conversation.
 url: https://raw.githubusercontent.com/api-evangelist/3721zhcom/refs/heads/main/apis.yml
+image: https://zhkj1-1392913282.cos.ap-shanghai.myqcloud.com/nHelp/zh_logo.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -10,8 +21,20 @@ x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
+position: Producing
 tags:
 - Company
+- E-Commerce
+- Retail
+- SaaS
+- Marketing
+- Loyalty
+- Supply Chain
+- Food and Beverage
+- Local Commerce
+- Private Domain Traffic
+- WeChat Mini Programs
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/3721zhcom-domain-security.yml
+- type: LLMsTxt
+  url: llms/3721zhcom-llms.txt
+- type: Plans
+  url: plans/3721zhcom-plans-pricing.yml
 - type: Website
+  url: https://www.3721zh.com/
+- type: About
+  url: https://www.3721zh.com/aboutUS.html
+- type: Support
+  url: https://www.3721zh.com/contactUs.html
+- type: PrivacyPolicy
+  url: https://v.3721zh.com/zhkjgysys.html
+- type: Careers
+  url: https://www.3721zh.com/joinUs.html
+- type: SecondaryMarket
   url: https://equityzen.com/company/3721zhcom
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    3721zh.com markets "API接口" (API interfaces) on its own About page as one delivery mode of its
+    merchant SaaS and runs a live first-party gateway at gw.3721zh.com, but publishes no developer
+    portal, reference or spec anywhere; the only route to an integration is the 商户入驻
+    merchant-onboarding lead form and the 400-720-0000 sales line.
+  evidence:
+  - url: https://www.3721zh.com/aboutUS.html
+    status: 200
+  - url: https://www.3721zh.com/merchantEntry.html
+    status: 200
+  - url: https://gw.3721zh.com/v2/api-docs
+    status: 400
+  - url: https://www.3721zh.com/openapi.json
+    status: 404
+  - url: https://www.3721zh.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-09-05'

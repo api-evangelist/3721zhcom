@@ -1,0 +1,134 @@
+generated: '2026-09-05'
+method: probed
+source: live HTTPS probes of /.well-known/* on every host this record knows
+summary: No /.well-known document is served on any 3721zh.com host. www.3721zh.com and updateapp.3721zh.com
+  return 404/500 from a static IIS origin; v.3721zh.com is a Vue single-page app whose catch-all answers
+  200 with the same 993-byte HTML shell for every path (a false positive, recorded as a miss); gw.3721zh.com
+  is an undocumented API gateway that answers every path with the same 400 JSON envelope. No WellKnown,
+  SecurityTxt or AgentCard pointer is emitted, because nothing was served.
+hosts:
+- host: www.3721zh.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: v.3721zh.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 200 returned an HTML/SPA shell, not a document — treated as a miss
+- host: gw.3721zh.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 400
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 400
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 400
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 400
+    file: null
+  - path: /.well-known/api-catalog
+    status: 400
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 400
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 400
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 400
+    file: null
+  - path: /.well-known/agent.json
+    status: 400
+    file: null
+- host: updateapp.3721zh.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

@@ -1,0 +1,27 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.3721zh.com/aboutUS.html
+description: >-
+  3721zh.com (转换商城) publishes no pricing page, no plan tiers and no self-serve checkout on any
+  host reachable from its public site. Its own company copy markets the SaaS itself as free to the
+  merchant — "用saas免费化" ("free-of-charge SaaS") — with revenue coming from the branded-goods
+  supply chain, fulfilment and private-domain agency-operation services layered on top. Commercial
+  terms are set through the merchant (商户入驻) and product (商品入驻) onboarding forms and a sales
+  conversation, not published.
+plan_count: 0
+plans: []
+notes:
+- The homepage, About, merchant-onboarding and product-onboarding pages were fetched on 2026-09-05
+  and none carries a price, tier, quota or billing period.
+- No /pricing, /plans or equivalent page exists on www.3721zh.com; the site is an eight-page static
+  brochure whose only conversion path is a lead form.
+- Because there is no published API product, there is likewise no API plan or quota to record.
+evidence:
+- url: https://www.3721zh.com/
+  status: 200
+- url: https://www.3721zh.com/aboutUS.html
+  status: 200
+- url: https://www.3721zh.com/merchantEntry.html
+  status: 200
+- url: https://www.3721zh.com/commodityEntry.html
+  status: 200

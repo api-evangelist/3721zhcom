@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-3721zh.com is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/3721zhcom
+3721zh.com is the public domain of 转换商城 (Zhuanhuan Mall, "Conversion Mall"), the local-life
+private-domain e-commerce platform operated by 转换空间（上海）电子商务有限公司 (Zhuanhuan Space
+(Shanghai) E-Commerce Co., Ltd.), founded in 2018 and headquartered in Shanghai, China. The company
+pairs a free-to-merchant SaaS with a branded-goods supply chain, fulfilment, and private-domain
+traffic build-out and agency operation for catering, property-management, beauty, hotel, foot-bath,
+tea-house, education and retail-chain merchants.
+
+**No public API.** A 2026-09-05 enrichment pass found no developer portal, API reference, OpenAPI /
+Swagger / GraphQL / AsyncAPI document, SDK, `llms.txt`, `/.well-known/` document or agent card on any
+host the company operates. Its own About page lists "API接口" (API interfaces) among the delivery
+modes of its service system, and `gw.3721zh.com` is a live first-party gateway, but the contract is
+unpublished — the only route to an integration is the merchant-onboarding form and a sales
+conversation.
+
+- Website: https://www.3721zh.com/
+- Secondary-market listing: https://equityzen.com/company/3721zhcom
